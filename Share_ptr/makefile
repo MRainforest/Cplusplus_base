@@ -2,7 +2,7 @@ SRC=$(wildcard *.cc)
 OBJ=$(patsubst %.cc,%.o,$(SRC))
 #INCLUDE=../../include/
 LINK=
-CXX=g++
+CXX=g++ -g
 TARGET=share_ptr
 $(TARGET):$(OBJ)
 	$(CXX) -o $(TARGET) $(OBJ) $(LINK)
